@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      html {
+        --font-size: 40px;
+        height: calc(100% - 20px);
+        margin: 0px;
+        font-size: var(--font-size);
+      }
+      button {
+        font-size: var(--font-size);
+      }
+      body {
+        height: calc(100% - 20px);
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        overflow: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      body > div {
+        padding: 10px;
+      }
+      .displayCounter {
+        width: 7ex;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-resource="mountain" class="displayCounter">⛰  <span class="counter">0</span></div>
+    <div data-resource="pineTree" class="displayCounter">🌲  <span class="counter">0</span></div>
+    <div data-resource="pineApple" class="displayCounter">🍍  <span class="counter">0</span></div>
+    <div data-resource="appleTree" class="displayCounter">🌳  <span class="counter">0</span></div>
+    <div data-resource="apple" class="displayCounter">🍎  <span class="counter">0</span></div>
+    <div data-resource="worm" class="displayCounter">🐛 <span class="counter">0</span></div>
+    <div data-resource="bird" class="displayCounter">🐦 <span class="counter">0</span></div>
+
+    <script src="emojinomics.js"></script>
+  </body>
+</html>
